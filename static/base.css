@@ -1,0 +1,232 @@
+/* modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+:root {
+    /* Use a more readable tab size (opinionated). */
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+}
+
+html {
+    /*
+        Improve consistency of default fonts in all browsers. 
+        https://github.com/sindresorhus/modern-normalize/issues/3
+    */
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    /* Correct the line height in all browsers. */
+    line-height: 1.5;
+}
+
+body {
+    /* Remove the margin in all browsers. */
+    margin: 0;
+}
+
+hr {
+    /* Add the correct height in Firefox */
+    height: 0;
+    /* 
+        Correct the inheritance of border color in Firefox. 
+        https://bugzilla.mozilla.org/show_bug.cgi?id=190655
+    */
+    color: inherit;
+}
+
+b, strong {
+    /* Add the correct font weight in Edge and Safari. */
+    font-weight: bolder;
+}
+
+code, kbd, samp, pre {
+    /*
+        Improve consistency of default fonts in all browsers. 
+        https://github.com/sindresorhus/modern-normalize/issues/3
+    */
+    font-family:
+		ui-monospace,
+        SFMono-Regular,
+        Menlo,
+        Monaco,
+		Consolas,
+		'Liberation Mono',
+        Menlo,
+        "Courier New",
+        monospace;
+
+    /* Correct the odd 'em' font sizing in all browsers */
+    font-size: 1em;
+}
+
+sub, sup {
+    /* Prevent 'sub' and 'sup' elements from affecting the line height in all browsers. */
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+table {
+    /*
+        Remove text indentation from table contents in Chrome and Safari.
+        https://bugs.chromium.org/p/chromium/issues/detail?id=999088
+        https://bugs.webkit.org/show_bug.cgi?id=201297
+    */
+    text-indent: 0;
+    /*
+        Correct table border color inheritance in all Chrome and Safari.
+        https://bugs.chromium.org/p/chromium/issues/detail?id=935729
+        https://bugs.webkit.org/show_bug.cgi?id=195016
+    */
+    border-color: inherit;
+}
+
+button, input, optgroup, select, textarea {
+    /* Change the font styles in all browsers */
+    font-family: inherit; 
+    font-size: 100%;
+    line-height: inherit;
+    /* Remove the margin in Firefox and Safari */
+    margin: 0;
+}
+
+button, select {
+    /* Remove the inheritance of text transform in Firefox */
+    text-transform: none;
+}
+
+button, [type='button'], [type='reset'], [type='submit'] {
+    border: none;
+    /* Correct the inability to style clickable types in iOS and Safari */
+    -webkit-appearance: button;
+}
+
+::-moz-focus-inner {
+    /* Remove the inner border and padding in Firefox. */
+    border-style: none;
+    padding: 0;
+}
+
+:-moz-ui-invalid {
+    /*
+        Remove the additional ':invalid' styles in Firefox.
+        https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+    */
+    box-shadow: none;
+}
+
+legend {
+    /* Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers */
+    padding: 0;
+}
+
+progress {
+    /* Add the correct vertical alignment in Chrome and Firefox */
+    vertical-align: baseline;
+}
+
+summary {
+    /* Add the correct display in Chrome and Safari */
+    display: list-item;
+}
+
+blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
+    /* Removes the default spacing and border for appropriate elements */
+    margin: 0;
+}
+
+button {
+    background-color: transparent;
+    background-image: none;
+}
+
+button:focus {
+    /* 
+        Work around a Firefox/IE bug where the transparent `button` background
+        results in a loss of the default `button` focus styles.
+    */
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/**
+ * Tailwind custom reset styles
+ */
+
+body {
+    font-family: inherit;
+    line-height: inherit;
+}
+
+hr {
+    /* Ensure horizontal rules are visible by default */
+    border-top-width: 1px;
+}
+
+button, [role="button"] {
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+a {
+    /* Reset links to optimize for opt-in styling instead of opt-out. */
+    color: inherit;
+    text-decoration: inherit;
+}
+
+button, input, optgroup, select, textarea {
+    /*
+        Reset form element properties that are easy to forget to
+        style explicitly so you don't inadvertently introduce
+        styles that deviate from your design system. These styles
+        supplement a partial reset that is already applied by normalize.css.
+    */
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+}
+
+img, svg, video, canvas, audio, iframe, embed, object {
+    /*
+        Make replaced elements `display: block` by default as that's the behavior you want almost all of the time. 
+        Inspired by CSS Remedy, with `svg` added as well.
+        https://github.com/mozdevs/cssremedy/issues/14
+    */
+    display: block;
+    vertical-align: middle;
+}
+
+img, video {
+    /*
+        Constrain images and videos to the parent width and preserve their instrinsic aspect ratio.
+        https://github.com/mozdevs/cssremedy/issues/14
+    */
+    max-width: 100%;
+    height: auto;
+}
